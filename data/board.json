@@ -1,0 +1,258 @@
+{
+  "spaces": [
+    {
+      "name": "Go",
+      "type": "go"
+    },
+    {
+      "name": "Old Kent\nRoad",
+      "type": "property",
+      "set": "brown",
+      "value": 60
+    },
+    {
+      "name": "Community\nChest",
+      "type": "community"
+    },
+    {
+      "name": "Whitechapel\nRoad",
+      "type": "property",
+      "set": "brown",
+      "value": 60
+    },
+    {
+      "name": "Income\nTax",
+      "type": "tax",
+      "value": 200
+    },
+    {
+      "name": "Kings Cross\nStation",
+      "type": "station",
+      "value": 200
+    },
+    {
+      "name": "The Angel\nIslington",
+      "type": "property",
+      "set": "blue",
+      "value": 100
+    },
+    {
+      "name": "Chance",
+      "type": "chance"
+    },
+    {
+      "name": "Euston\nRoad",
+      "type": "property",
+      "set": "blue",
+      "value": 100
+    },
+    {
+      "name": "Pentonville\nRoad",
+      "type": "property",
+      "set": "blue",
+      "value": 120
+    },
+    {
+      "name": "Jail",
+      "type": "jail"
+    },
+    {
+      "name": "Pall Mall",
+      "type": "property",
+      "set": "pink",
+      "value": 140
+    },
+    {
+      "name": "Electric\nCompany",
+      "type": "utility",
+      "value": 150
+    },
+    {
+      "name": "Whitehall",
+      "type": "property",
+      "set": "pink",
+      "value": 140
+    },
+    {
+      "name": "Northumber\nland Avenue",
+      "type": "property",
+      "set": "pink",
+      "value": 160
+    },
+    {
+      "name": "Marylebone\nStation",
+      "type": "station",
+      "value": 200
+    },
+    {
+      "name": "Bow Street",
+      "type": "property",
+      "set": "orange",
+      "value": 180
+    },
+    {
+      "name": "Community\nChest",
+      "type": "community"
+    },
+    {
+      "name": "Marlborough\nStreet",
+      "type": "property",
+      "set": "orange",
+      "value": 200
+    },
+    {
+      "name": "Vine Street",
+      "type": "property",
+      "set": "orange",
+      "value": 200
+    },
+    {
+      "name": "Free Parking",
+      "type": "free"
+    },
+    {
+      "name": "Strand",
+      "type": "property",
+      "set": "red",
+      "value": 220
+    },
+    {
+      "name": "Chance",
+      "type": "chance"
+    },
+    {
+      "name": "Fleet Street",
+      "type": "property",
+      "set": "red",
+      "value": 220
+    },
+    {
+      "name": "Trafalgar\nSquare",
+      "type": "property",
+      "set": "red",
+      "value": 240
+    },
+    {
+      "name": "Fenchurch\nStreet Station",
+      "type": "station",
+      "value": 200
+    },
+    {
+      "name": "Leicester\nSquare",
+      "type": "property",
+      "set": "yellow",
+      "value": 260
+    },
+    {
+      "name": "Coventry\nStreet",
+      "type": "property",
+      "set": "yellow",
+      "value": 260
+    },
+    {
+      "name": "Water\nWorks",
+      "type": "utility",
+      "value": 150
+    },
+    {
+      "name": "Piccadilly",
+      "type": "property",
+      "set": "yellow",
+      "value": 280
+    },
+    {
+      "name": "Go To Jail",
+      "type": "go_to_jail"
+    },
+    {
+      "name": "Regent\nStreet",
+      "type": "property",
+      "set": "green",
+      "value": 300
+    },
+    {
+      "name": "Oxford\nStreet",
+      "type": "property",
+      "set": "green",
+      "value": 300
+    },
+    {
+      "name": "Community\nChest",
+      "type": "community"
+    },
+    {
+      "name": "Bond\nStreet",
+      "type": "property",
+      "set": "green",
+      "value": 320
+    },
+    {
+      "name": "Liverpool\nStreet Station",
+      "type": "station",
+      "value": 200
+    },
+    {
+      "name": "Chance",
+      "type": "chance"
+    },
+    {
+      "name": "Park Lane",
+      "type": "property",
+      "set": "purple",
+      "value": 350
+    },
+    {
+      "name": "Super\nTax",
+      "type": "tax",
+      "value": 100
+    },
+    {
+      "name": "Mayfair",
+      "type": "property",
+      "set": "purple",
+      "value": 400
+    }
+  ],
+  "sets": {
+    "brown": {
+      "colour": "SaddleBrown",
+      "size": 2,
+      "build_cost": 50
+    },
+    "blue": {
+      "colour": "LightSkyBlue",
+      "size": 3,
+      "build_cost": 50
+    },
+    "pink": {
+      "colour": "HotPink",
+      "size": 3,
+      "build_cost": 100
+    },
+    "orange": {
+      "colour": "orange",
+      "size": 3,
+      "build_cost": 100
+    },
+    "red": {
+      "colour": "Red",
+      "size": 3,
+      "build_cost": 150
+    },
+    "yellow": {
+      "colour": "Gold",
+      "size": 3,
+      "build_cost": 150
+    },
+    "green": {
+      "colour": "Green",
+      "size": 3,
+      "build_cost": 200
+    },
+    "purple": {
+      "colour": "RebeccaPurple",
+      "size": 2,
+      "build_cost": 200
+    }
+  }
+}

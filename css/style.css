@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.game-wrapper {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+}
+.game-wrapper:after {
+    padding-top: 75%;
+    display: block;
+    content: ' ';
+}
+
+.game {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+canvas {
+    float: left;
+    height: 100%;
+}
+
+img {
+    display: none;
+}
+
+.controls {
+    width: auto;
+    overflow: hidden;
+    padding: 10px;
+    position: relative;
+    display: block;
+
+}
+
+.button {
+    background: cadetblue;
+    float: left;
+    height: 50px;
+    margin: 0 10px 10px 0;
+    width: 50%;
+    padding: 5px;
+    cursor: pointer;
+}
+.button:hover {
+    background: lightskyblue;
+}
+
+.dialog {
+
+}
