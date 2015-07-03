@@ -151,19 +151,26 @@ define("Canvas", ['json!../data/board.json'], function(board) {
         //dialog
         if (this.game.dialog) {
             console.log('show dialog');
-            var dialog = document.createElement('div');
-            dialog.className = "dialog";
-            dialog.innerHTML = this.game.dialog.message;
-            this.game.dialog['options'].forEach(function (option) {
-                var button = document.createElement('div');
-                button.className = "option";
-                button.innerHTML = option.text;
-                addEvent(button, "click", function () {
-                    console.log(option.action)
+            var dialog = document.getElementById('dialog');
+            if (!dialog) {
+                dialog = document.createElement('div');
+                dialog.className = "dialog";
+                dialog.id = 'dialog';
+
+                dialog.innerHTML = this.game.dialog.message;
+
+                this.game.dialog['options'].forEach(function (option) {
+                    var button = document.createElement('div');
+                    button.className = "option";
+                    button.innerHTML = option.text;
+                    addEvent(button, "click", function () {
+                        console.log(option.action)
+                    });
+                    dialog.appendChild(button);
                 });
-                dialog.appendChild(button);
-            });
-            document.body.appendChild(dialog);
+
+                document.body.appendChild(dialog);
+            }
         }
 
 
