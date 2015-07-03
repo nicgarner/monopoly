@@ -157,7 +157,9 @@ define("Canvas", ['json!../data/board.json'], function(board) {
                 dialog.className = "dialog";
                 dialog.id = 'dialog';
 
-                dialog.innerHTML = this.game.dialog.message;
+                var text = document.createElement('p');
+                text.innerHTML = this.game.dialog.message;
+                dialog.appendChild(text);
 
                 this.game.dialog['options'].forEach(function (option) {
                     var button = document.createElement('div');
