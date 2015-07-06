@@ -150,16 +150,17 @@ define("Canvas", ['json!../data/board.json'], function(board) {
 
         //dialog
         if (this.game.dialog) {
-            console.log('show dialog');
             var dialog = document.getElementById('dialog');
             if (!dialog) {
                 dialog = document.createElement('div');
                 dialog.className = "dialog";
                 dialog.id = 'dialog';
 
-                var text = document.createElement('p');
-                text.innerHTML = this.game.dialog.message;
-                dialog.appendChild(text);
+                var paragraph = document.createElement('p');
+                var unprocessedText = this.game.dialog.message;
+                var space = board['spaces'][this.game.players[this.game.currentPlayer].space];
+                paragraph.innerHTML = unprocessedText.replace('{space}', space.name);
+                dialog.appendChild(paragraph);
 
                 this.game.dialog['options'].forEach(function (option) {
                     var button = document.createElement('div');
