@@ -27,7 +27,7 @@ define("Game", ['Player', 'json!../data/board.json'], function(Player, board) {
     };
     Game.prototype.showDialog = function() {
         this.dialog = {
-            "message": "You landed on a property. Buy it?",
+            "message": "You landed on {space}. Buy it?",
             "options": [
                 {
                     "text": "Yes",
@@ -63,6 +63,11 @@ define("Game", ['Player', 'json!../data/board.json'], function(Player, board) {
         this.canvas.draw();
     };
     Game.prototype.roll = function(fixMethod) {
+        var dialog = document.getElementById('dialog');
+        if (dialog) {
+            document.body.removeChild(dialog);
+        }
+
         this.die1 = Math.floor((Math.random() * 6) + 1);
         if (fixMethod == "doubles") {
             this.die2 = this.die1;
