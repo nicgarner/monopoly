@@ -63,9 +63,8 @@ define("Game", ['Player', 'json!../data/board.json'], function(Player, board) {
         this.canvas.draw();
     };
     Game.prototype.roll = function(fixMethod) {
-        var dialog = document.getElementById('dialog');
-        if (dialog) {
-            document.body.removeChild(dialog);
+        if (this.dialog) {
+            this.dialog = null;
         }
 
         this.die1 = Math.floor((Math.random() * 6) + 1);
